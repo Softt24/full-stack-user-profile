@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, 'Times New Roman', sans-serif;
+}
+.profile {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #000;
+}
+.container {
+  background-color: #4B5FDB;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 140px;
+  color: #EAEEF3;
+  border-radius: 5px;
+}
+label {
+  font-weight: bold;
+}
+button[type="button"] {
+  margin: 5px 300px;
+  border-radius: 5px;
+  padding: 3px;
+}
+::placeholder {
+  color: #000;
+  font-style: italic;
+}
