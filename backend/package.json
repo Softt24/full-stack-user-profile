@@ -1,15 +1,14 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^5.1.0"
-  }
+"name": "full-stack-user-profile",
+"version": "1.0.0",
+"description": "Full-stack profile form using HTML/CSS/JS + Express",
+"main": "index.js",
+"scripts": {
+"start": "node index.js"
+},
+"dependencies": {
+"express": "^5.1.0"
+},
+"author": "",
+"license": "ISC"
 }

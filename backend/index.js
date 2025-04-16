@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -6,8 +5,8 @@ const app = express();
 // Middleware to parse incoming JSON
 app.use(express.json());
 
-// Serve static files from the frontend folder
-app.use(express.static(path.join(__dirname, '../frontend')));
+// Serve static files from the public folder
+app.use(express.static(path.join(__dirname, '../public')));
 
 // GET example route
 app.get('/api/message', (req, res) => {
@@ -19,14 +18,14 @@ app.post('/api/save-profile', (req, res) => {
   const userProfile = req.body;
   console.log('Received profile data:', userProfile);
 
-  // Here you could store data in a database (e.g. MongoDB)
+  // Simulate saving data
   res.json({
     message: `Profile for ${userProfile.name} received successfully!`
   });
 });
 
 // Start the server
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
