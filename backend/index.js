@@ -8,7 +8,7 @@ app.use(express.json());
 // Serve static files from the public folder
 app.use(express.static(path.join(__dirname, '../public')));
 
-// GET example route
+// GET route
 app.get('/api/message', (req, res) => {
   res.json({ message: 'Hello from the backend!' });
 });
@@ -18,7 +18,7 @@ app.post('/api/save-profile', (req, res) => {
   const userProfile = req.body;
   console.log('Received profile data:', userProfile);
 
-  // Simulate saving data
+  // Saving data
   res.json({
     message: `Profile for ${userProfile.name} received successfully!`
   });
